@@ -57,3 +57,9 @@ VALUES
 DROP TABLE people;
 SELECT * FROM people;
 SHOW TABLES;
+
+Using NOT NULL:
+CREATE TABLE cats2 (
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
