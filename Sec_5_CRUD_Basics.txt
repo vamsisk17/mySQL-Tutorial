@@ -17,3 +17,27 @@ VALUES ('Ringo', 'Tabby', 4),
        ('Misty', 'Tabby', 13),
        ('George Michael', 'Ragdoll', 9),
        ('Jackson', 'Sphynx', 7);
+
+-- To get all the columns:
+SELECT * FROM cats;
+
+-- To only get the age column:
+SELECT age FROM cats;
+ 
+-- To select multiple specific columns:
+SELECT name, breed FROM cats;
+
+
+-- Use where to specify a condition:
+ex1 SELECT * FROM cats WHERE age = 4;
+ex2 SELECT * FROM cats WHERE name ='Egg';
+
+-- Use 'AS' to alias a column in your results (it doesn't actually change the name of the column in the table)
+SELECT cat_id AS id, name FROM cats;
+
+CODE: Updating Data
+Change tabby cats to shorthair:
+UPDATE cats SET breed='Shorthair' WHERE breed='Tabby';
+
+Another update:
+UPDATE cats SET age=14 WHERE name='Misty';
