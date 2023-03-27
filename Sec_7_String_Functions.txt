@@ -94,3 +94,25 @@ SELECT CHAR_LENGTH(title) as length, title FROM books;
 SELECT author_lname, CHAR_LENGTH(author_lname) AS 'length' FROM books;
  
 SELECT CONCAT(author_lname, ' is ', CHAR_LENGTH(author_lname), ' characters long') FROM books;
+
+UPPER,LOWER and CONCAT
+SELECT UPPER('Hello World');
+ 
+SELECT LOWER('Hello World');
+ 
+SELECT UPPER(title) FROM books;
+ 
+SELECT CONCAT('MY FAVORITE BOOK IS ', UPPER(title)) FROM books;
+ 
+SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
+
+Other additional string functions
+SELECT INSERT('Hello Bobby', 6, 0, 'There'); 
+ 
+SELECT LEFT('omghahalol!', 3);
+ 
+SELECT RIGHT('omghahalol!', 4);
+ 
+SELECT REPEAT('ha', 4);
+ 
+SELECT TRIM('  pickle  ');
