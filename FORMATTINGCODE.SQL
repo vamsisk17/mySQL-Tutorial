@@ -8,3 +8,5 @@ CREATE TABLE books (
     pages INT,
     PRIMARY KEY (book_id)
 );
+
+SELECT CONCAT(LEFT(title,10),'...') AS 'short title',CONCAT(l_name,','f_name) AS author,stock_quantity FROM books;
