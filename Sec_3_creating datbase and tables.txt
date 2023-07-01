@@ -10,6 +10,11 @@ CREATE DATABASE soap_store;
 *To drop a database:
 DROP DATABASE <database-name>;
 
+What is the difference between DROP DELETE and TRUNCATE Tutorialspoint?
+The DROP command is the only one that can remove table schema, indices, constraints, and triggers. Neither of these commands can accomplish that.
+Use the TRUNCATE command if you wish to remove all of the records from a table. 
+Use the DELETE command in order to remove individual records from a table.
+
 *To use a database:
 USE <database-name>;
 
